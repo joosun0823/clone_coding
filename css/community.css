@@ -121,6 +121,30 @@ main{
   font-size: 12px;
 }
 
+.community_sumgo_pick > ul{
+  position: relative;
+}
+
+.sumgo_pick_prev_button{
+  position: absolute;
+  top: 0px;
+  left: -25px;
+  display: none;
+}
+
+.sumgo_pick_next_button{
+  position: absolute;
+  top: 0px;
+  right: -25px;
+  display: none;
+  cursor: pointer;
+}
+
+.community_sumgo_pick > ul:hover .sumgo_pick_next_button{
+  display: block;
+  
+}
+
 .community_sumgo_pick > ul {
   display: flex;
   justify-content: space-between;
@@ -135,7 +159,7 @@ main{
   border-radius: 8px;
 }
 
-.community_sumgo_pick > ul > li > h3{
+.community_sumgo_pick > ul > li > a > h3{
   width: 100%;
   margin: 0;
   text-overflow: ellipsis;
@@ -145,18 +169,18 @@ main{
 }
 
 
-.community_sumgo_pick > ul > li > div{
+.community_sumgo_pick > ul > li > a >  div{
   display: flex;
   justify-content: flex-end;
 }
 
-.community_sumgo_pick > ul > li > div >p{
+.community_sumgo_pick > ul > li > a > div >p{
   margin: 0;
   display: flex;
   margin-left: 15px;
 }
 
-.community_sumgo_pick > ul > li > div > p > span{
+.community_sumgo_pick > ul > li > a > div > p > span{
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -187,6 +211,7 @@ main{
   padding: 0;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .photo_review_list > li{
@@ -236,4 +261,88 @@ main{
 .review_rating > span{
   font-size: 12px;
   color: #b5b5b5;
+}
+
+.photo_review_prev_button{
+  position: absolute;
+  cursor: pointer;
+  top: 36%;
+  left: -4%;
+  display: none;
+}
+
+.photo_review_next_button{
+  position: absolute;
+  cursor: pointer;
+  top: 36%;
+  right: -4%;
+
+}
+
+.community_review_list{
+  
+}
+
+.community_review_list > ul{
+  margin: 0;
+  padding: 0;
+}
+
+.community_review_list > ul > li{
+  padding: 20px 8px;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.community_review_list > ul > li > a > h3{
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.review_category, .review_content, .review_place,.review_goodcount > p{
+  margin: 0;
+}
+
+.review_category{
+  font-size: 12px;
+  color: #888888;
+  margin-bottom: 8px;
+}
+
+.review_content{
+  margin-bottom: 10px;
+  color: #888888;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.review_place{
+  margin-bottom: 12px;
+  color: #888888;
+  font-size: 14px;
+}
+
+.review_comment{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.review_goodcount{
+  display: flex;
+}
+
+.review_goodcount > p{
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.review_goodcount > p > img{
+  margin-right: 4px;
+}
+
+.review_goodcount > p > span, .review_comment>span{
+  font-size: 12px;
+  color: #c5c5c5;
 }

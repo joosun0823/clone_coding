@@ -45,6 +45,24 @@ margin-top: 100px;
   justify-content: center;
 }
 
+.section_one_banner{
+  position: relative;
+}
+
+.banner_prev_button{
+  position: absolute;
+  top: 10%;
+  left: -25px;
+  cursor: pointer;
+}
+
+.banner_next_button{
+  position: absolute;
+  top: 10%;
+  right: -25px;
+  cursor: pointer;
+}
+
 
 .section_one_searchbar{
   display: flex;

@@ -1,0 +1,189 @@
+main{
+  width: 970px;
+  margin: 0 auto;
+}
+
+.community_title{
+  margin: 130px 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.community_title > h1{
+  font-size: 34px;
+  margin: 0;
+}
+
+.community_title > button{
+  display: flex;
+  align-items: center;
+  padding: 14px 22px 14px 28px;
+  color: #eee;
+  background-color: #00c7ae;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.community_title > button > img{
+  width: 18px;
+  height: 18px;
+  margin-left: 3px;
+}
+
+.community_categorytab{
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.community_categorytab > a{
+  display: inline-block;
+  padding: 12px 4px 10px;
+}
+
+.sumgolife{
+  border-bottom: 1px solid black;
+  margin-right: 8px;
+}
+
+.gosucenter{
+  color: #a9a9a9;
+}
+
+
+.community_main{
+  display: flex;
+  margin-top: 30px;
+}
+
+.community_main_category > p{
+
+}
+
+.community_main_category > p > a{
+  background-color: #eafaf9;
+  padding: 15px 120px 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.community_main_content{
+  margin-left: 100px;
+  width: 600px;
+}
+
+.community_main_content > ul {
+  width: 100%;
+  margin:0 0 40px 0;
+  padding: 0;
+} 
+
+.community_main_content > ul > li {
+  display: inline-block;
+  background-color: #f4f4f4;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.community_main_content > ul > li > a > span{
+  margin-right: 5px;
+}
+
+.community_main_content > ul > li > a > span:nth-of-type(1){
+  font-weight: bold;
+}
+
+.sumgo_pick_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sumgo_pick_title > h3{
+  margin: 0;
+  font-size: 18px;
+}
+.sumgo_pick_title > span{
+  font-size: 12px;
+}
+
+.community_sumgo_pick > ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.community_sumgo_pick > ul > li{
+  width: 260px;
+  background-color: #fff0f1;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.community_sumgo_pick > ul > li > h3{
+  width: 100%;
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap:nowrap;
+  margin-bottom: 15px;
+}
+
+
+.community_sumgo_pick > ul > li > div{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.community_sumgo_pick > ul > li > div >p{
+  margin: 0;
+  display: flex;
+  margin-left: 15px;
+}
+
+.community_sumgo_pick > ul > li > div > p > span{
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color:#888;
+  margin-left: 5px;
+}
+
+.community_photo_review{
+
+}
+
+.community_photo_review_title{
+  margin-top: 40px;
+}
+
+.community_photo_review_title > p{
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color:#5080fa;
+}
+
+.community_photo_review_title > h3{
+  margin: 0;
+}
+
+.photo_reivew_list{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo_reivew_list > li{
+  width: 290px;
+  border: 1px solid;
+}
+
+.photo_reivew_list > li > a > img{
+  width: 100%;
+  height: 240px;
+}

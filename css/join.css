@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+*{
+  font-family: 'NanumBarunGothic';
+  color: #323232;
+  font-size: 16px;
+}
+
+main{
+  background-color: #fafafa;
+  padding-bottom: 100px;
+}
+
+h2{
+  padding-top: 130px;
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.join_form{
+  width: 360px;
+  margin: 0 auto;
+  border: 1px solid #f2f2f2;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.join_form > form{
+  width: 100%;
+}
+
+.join_name{
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.join_name > label{
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+.join_name > input{
+  width: 100%;
+  padding: 15px 12px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-color: #00c7ae;
+}
+
+
+.join_name > input::placeholder{
+  color: rgba(0,0,0,.3);
+}
+
+
+.join_email{
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.join_email > label{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.join_email > input{
+  width: 100%;
+  padding: 15px 12px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-color: #00c7ae;
+}
+
+.join_email > input::placeholder{
+  color: rgba(0,0,0,.3);
+}
+
+.join_password{
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.join_password > label{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.join_password > input{
+  width: 100%;
+  padding: 15px 12px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-color: #00c7ae;
+}
+
+.join_password > input::placeholder{
+  color: rgba(0,0,0,.3);
+}
+
+.join_terms > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.join_terms > div > input{
+  width: 20px;
+  height: 20px;
+}
+
+
+.join_terms > div > input[type="checkbox"], .join_terms > ul > li > input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  outline: none !important;
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  background: #fbfbfb;
+}
+
+.join_terms > div > input[type="checkbox"]::before ,.join_terms > ul > li > input[type="checkbox"]::before{
+  content: "\2714";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: scale(0) translate(-50%, -50%);
+  line-height: 1;
+}
+
+.join_terms > div > input[type="checkbox"]:hover, .join_terms > ul > li > input[type="checkbox"]:hover {
+  border-color: rgba(170, 170, 170, 0.5);
+}
+
+.join_terms > div > input[type="checkbox"]:checked , .join_terms > ul > li > input[type="checkbox"]:checked{
+  background-color: #00c7ae;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.join_terms > div > input[type="checkbox"]:checked::before, .join_terms > ul > li > input[type="checkbox"]:checked::before {
+  border-radius: 2px;
+  transform: scale(1) translate(-50%, -50%)
+}
+
+
+.join_terms > ul{
+  padding: 0;
+}
+
+.join_terms > ul > li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.join_terms > ul > li > label > span{
+  font-size: 14px;
+  color: #737373;
+}
+
+.join_terms > ul > li > label > span:nth-of-type(2){
+  color: #b5b5b5;
+}
+
+.join_terms > ul > li > label > span > a{
+  font-size: 14px;
+  color: #737373;
+  text-decoration: underline;
+}
+
+.join_button{
+  width: 100%;
+}
+
+.join_button > button{
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 0;
+  background-color: #00c7ae;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.join_button > button:hover{
+  transition: background-color .5s ease;
+  background-color: #00a18d;
+}
+
+.join_button > a{
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+}
+

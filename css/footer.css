@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+*{
+  font-family: 'NanumBarunGothic';
+  color: #323232;
+  font-size: 16px;
+}
+
+body{
+  margin: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+footer{
+  width: 100%;
+  border-top: solid 1px #e1e1e1;
+}
+.footer{
+  width: 970px;
+  margin: 0 auto;
+  padding: 1.3rem 0 2.5rem;
+}
+
+.text_top{
+  font-size: 20px;
+  margin: 0;
+  color: #00c7ae;
+  font-weight: 600;
+}
+
+.text_middle{
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #737373;
+}
+
+.downloads_button{
+  display: flex;
+}
+
+.download{
+  background-color: #00c7ae;
+  display: flex;
+  align-items: flex-end;
+  width: 6rem;
+  font-size: 12px;
+  color: #ffffff;
+  margin-right: 10px;
+  padding: 6px 18px 8px;
+  border-radius: 30px;
+}
+
+.download > img{
+  margin-right: 6%;
+}
+
+.footer_top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_top_left > ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+}
+
+.footer_top_left > ul > li{
+  width: 100px;
+}
+
+.footer_top_left > ul > li > p{
+  margin: 0;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+
+.footer_top_left > ul > li > div > a{
+  display: block;
+  font-size: 14px;
+  color: #737373;
+  padding-bottom: 10px;
+}
+
+.footer_bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bottom_list{
+  padding: 0;
+  display: flex;
+  font-size: 12px;
+}
+
+.bottom_list > li {
+  margin-right: 30px;
+}
+
+.footer_bottom > .footer_bottom_left > div{
+  font-size: 12px;
+  color: #737373;
+  line-height: 1.4;
+}
+
+.bottom_list > li > a{
+  font-size: 12px;
+  color: #737373;
+}
+
+.company_info{
+  padding: 0;
+}
+
+.company_info > li{
+  font-size: 12px;
+  color: #737373;
+  padding-bottom: 4px;
+}
+
+.footer_bottom_right{
+  padding-bottom: 40px;
+}
+
+
+.footer_bottom_right > a{
+    padding: 0 6px;
+}

@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+*{
+  font-family: 'NanumBarunGothic';
+  color: #323232;
+  font-size: 16px;
+}
+
+
+main{
+  background-color: #fafafa;
+  padding-bottom: 100px;
+}
+
+h2{
+  padding-top: 130px;
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.login_form{
+  width: 360px;
+  margin: 0 auto;
+  border: 1px solid #f2f2f2;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+
+.login_form > form{
+  width: 100%;
+}
+
+.login_email{
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.login_email > label{
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+.login_email > input{
+  width: 100%;
+  padding: 15px 12px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-color: #00c7ae;
+}
+
+
+.login_email > input::placeholder{
+  color: rgba(0,0,0,.3);
+}
+
+
+.login_password{
+  width: 100%;
+  margin-bottom: 24px;
+
+}
+
+.login_password > label{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login_password > input{
+  width: 100%;
+  padding: 15px  12px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-color: #00c7ae;
+}
+
+
+.login_password > input::placeholder{
+  color: rgba(0,0,0,.3);
+}
+
+
+.login_button{
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+
+
+.login_button > button{
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 0;
+  background-color: #00c7ae;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login_button >  button:hover{
+  transition: background-color .5s ease;
+  background-color: #00a18d;
+}
+
+.login_find{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.login_find > a {
+  font-size: 14px;
+  color:#737373;
+  padding: 6px 8px;
+}
+
+.line{
+  width: 1px;
+  background-color: #e1e1e1;
+  height: 12px;
+  margin: auto 10px;
+}
+
+.login_kakao{
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.login_kakao > button{
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 0;
+  background-color: #fee500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.login_kakao > button:hover{
+  transition: background-color .5s ease;
+  background-color: #d8c300;
+}
+
+.login_kakao > button > img{
+  margin-right: 8px;
+}
+
+.login_kakao > button > span{
+  color: rgba(0,0,0,.85);
+}
+
+.login_naver{
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.login_naver > button{
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 0;
+  background-color: #03c75a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.login_naver > button:hover{
+  transition: background-color .5s ease;
+  background-color: #02a149;
+}
+
+.login_naver > button > img{
+  margin-right: 8px;
+}
+
+.login_naver > button > span{
+  color: #fff;
+}
+
+.login_facebook{
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.login_facebook > button{
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 0;
+  background-color: #1876f1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.login_facebook > button:hover{
+  transition: background-color .5s ease;
+  background-color: #0d64d6;
+}
+
+.login_facebook > button > img{
+  margin-right: 8px;
+}
+
+.login_facebook > button > span{
+  color: #fff;
+}

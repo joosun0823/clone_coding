@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>숨고:숨은고수 - 1000만명이 선택한 전국민 생활 솔루션</title>
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="./js/index.js"></script>
+  <script defer src="./js/header.js"></script>
 </head>
 <body>
   <header>
@@ -34,13 +40,73 @@
             </ul>
         </div>
     </div>
+    <div class="header_list">
+      <div class="header_list_height">
+        <div class="header_list_tab">
+          <ul>
+            <li><span class="header_popular colored">인기키워드</span></li>
+            <li><span class="header_recent">최근 검색한 서비스</span></li>
+          </ul>
+        </div>
+        <div class="header_list_content">
+          <ul>
+            <li><a href="#">피아노/키보드 레슨</a></li>
+            <li><a href="#">골프 레슨</a></li>
+            <li><a href="#">퍼스널트레이닝(PT)</a></li>
+            <li><a href="#">보컬 레슨</a></li>
+            <li><a href="#">수학 과외</a></li>
+            <li><a href="#">에어컨 설치 및 수리</a></li>
+            <li><a href="#">문 설치 및 수리</a></li>
+            <li><a href="#">수도 관련 설치 및 수리</a></li>
+          </ul>
+          <div class="header_recently_search">
+            <span>
+              최근 검색한 내역이 없습니다
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="header_list_close">
+        <span>닫기</span>
+      </div>
+    </div>
   </header>
   <main>
     <section class="section_one">
       <h2>1,000가지 생활 서비스를 단 한 곳에서</h2>
       <div class="section_one_searchbar">
         <p><img src="./img/magnifier.svg"/></p>
-        <input type="text" placeholder="어떤 서비스가 필요하세요?"/>
+        <input type="text" placeholder="어떤 서비스가 필요하세요?" id="main_searchbar"/>
+        <div class="searchbar_list">
+          <div class="list_height">
+            <div class="list_tab">
+              <ul>
+                <li><span class="popular colored">인기키워드</span></li>
+                <li><span class="recent">최근 검색한 서비스</span></li>
+              </ul>
+            </div>
+            <div class="list_content">
+              <ul>
+                <li><a href="#">피아노/키보드 레슨</a></li>
+                <li><a href="#">골프 레슨</a></li>
+                <li><a href="#">퍼스널트레이닝(PT)</a></li>
+                <li><a href="#">보컬 레슨</a></li>
+                <li><a href="#">수학 과외</a></li>
+                <li><a href="#">에어컨 설치 및 수리</a></li>
+                <li><a href="#">문 설치 및 수리</a></li>
+                <li><a href="#">수도 관련 설치 및 수리</a></li>
+              </ul>
+              <div class="recently_search">
+                <span>
+                  최근 검색한 내역이 없습니다
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="list_close">
+            <span>닫기</span>
+          </div>
+        </div>
       </div>
       <div class="section_one_category">
         <ul>
@@ -143,8 +209,15 @@
         </ul>
       </div>
       <div class="section_one_banner">
-        <div class="banner_img">
-          <img src="./img/banner1.webp" alt="">
+        <div>
+          <ul class="banner_img" id="banner">
+            <li><a href=""><img class="bannerImage" src="./img/banner1.webp" alt=""></a></li>
+            <li><a href=""><img class="bannerImage" src="./img/banner2.webp" alt=""></a></li>
+            <li><a href=""><img class="bannerImage" src="./img/banner3.webp" alt=""></a></li>
+            <li><a href=""><img class="bannerImage" src="./img/banner4.webp" alt=""></a></li>
+            <li><a href=""><img class="bannerImage" src="./img/banner5.webp" alt=""></a></li>
+            <li><a href=""><img class="bannerImage" src="./img/banner6.webp" alt=""></a></li>
+          </ul>
         </div>
         <p class="banner_prev_button">
           <img src="./img/prev_button.svg" alt="">
@@ -157,11 +230,11 @@
     <section class="section_two">
       <h2>숨고 인기 서비스</h2>
       <div class="section_two_service">
-        <ul>
+        <ul class="service">
           <li>
             <a href="">
               <div class="service_list">
-                <img src="./img/piano_lesson.webp" alt="">
+                <img class="service_img" src="./img/piano_lesson.webp" alt="">
                 <p>피아노/키보드 레슨</p>
                 <div class="lesson_request">
                   <img src="./img/request_icon.svg" alt="">
@@ -173,7 +246,7 @@
           <li>
             <a href="">
               <div class="service_list">
-                <img src="./img/golf_lesson.webp  " alt="">
+                <img class="service_img" src="./img/golf_lesson.webp  " alt="">
                 <p>골프 레슨</p>
                 <div class="lesson_request">
                   <img src="./img/request_icon.svg" alt="">
@@ -185,7 +258,7 @@
           <li>
             <a href="">
               <div class="service_list">
-                <img src="./img/pt_lesson.webp" alt="">
+                <img class="service_img" src="./img/pt_lesson.webp" alt="">
                 <p>퍼스널트레이닝(PT)</p>
                 <div class="lesson_request">
                   <img src="./img/request_icon.svg" alt="">
@@ -197,11 +270,59 @@
           <li>
             <a href="">
               <div class="service_list">
-                <img src="./img/vocal_lesson.webp" alt="">
+                <img class="service_img" src="./img/vocal_lesson.webp" alt="">
                 <p>보컬 레슨</p>
                 <div class="lesson_request">
                   <img src="./img/request_icon.svg" alt="">
                   <span>454,561명 요청</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="service_list">
+                <img class="service_img" src="./img/math_lesson.webp" alt="">
+                <p>수학 과외</p>
+                <div class="lesson_request">
+                  <img src="./img/request_icon.svg" alt="">
+                  <span>330,868명 요청</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="service_list">
+                <img class="service_img" src="./img/aircon_as.webp" alt="">
+                <p>에어컨 설치 및 수리</p>
+                <div class="lesson_request">
+                  <img src="./img/request_icon.svg" alt="">
+                  <span>850,168명 요청</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="service_list">
+                <img class="service_img" src="./img/door_as.webp" alt="">
+                <p>문 설치 및 수리</p>
+                <div class="lesson_request">
+                  <img src="./img/request_icon.svg" alt="">
+                  <span>278,512명 요청</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="service_list">
+                <img class="service_img" src="./img/watertap_as.webp" alt="">
+                <p>수도 관련 설치 및 수리</p>
+                <div class="lesson_request">
+                  <img src="./img/request_icon.svg" alt="">
+                  <span>381,803명 요청</span>
                 </div>
               </div>
             </a>
@@ -218,7 +339,7 @@
     <section class="section_three">
       <div class="section_three_title">
         <h2>숨고 커뮤니티에 물어보세요</h2>
-        <a href="">
+        <a href="./community.html">
           <span>전체보기</span>
           <img src="./img/seeall_button.svg" alt="">
         </a>
@@ -348,11 +469,11 @@
         </a>
       </div>
       <div class="section_four_portfolio">
-        <ul>
+        <ul class="portfolio">
           <li>
             <a href="">
               <div class="port_img">
-                <img src="./img/portfolio_model.webp" alt="">
+                <img class="portfolio_img" src="./img/portfolio_model.webp" alt="">
                 <div class="port_title">
                   <h3>내가 작업한 모델 포토샵 메이크업 헤어 사진</h3>
                   <p>부분·피팅모델 알바</p>
@@ -367,7 +488,7 @@
           <li>
             <a href="">
               <div class="port_img">
-                <img src="./img/portfolio_dog.webp" alt="">
+                <img class="portfolio_img" src="./img/portfolio_dog.webp" alt="">
                 <div class="port_title">
                   <h3>견주만 휴가를 가나요, 반려견도 휴가가 필요합니다.</h3>
                   <p>기타 알바</p>
@@ -382,7 +503,7 @@
           <li>
             <a href="">
               <div class="port_img">
-                <img src="./img/portfolio_golf.webp" alt="">
+                <img class="portfolio_img" src="./img/portfolio_golf.webp" alt="">
                 <div class="port_title">
                   <h3>골프란?</h3>
                   <p>골프 레슨</p>
@@ -397,7 +518,7 @@
           <li>
             <a href="">
               <div class="port_img">
-                <img src="./img/portfolio_clean.webp" alt="">
+                <img class="portfolio_img" src="./img/portfolio_clean.webp" alt="">
                 <div class="port_title">
                   <h3>⭐️이사청소는 이렇게 진행되요⭐️</h3>
                   <p>이사/입주 청소업체</p>
@@ -409,19 +530,79 @@
               <span>삐까뻔쩍홈케어 ...</span>
             </a>
           </li>
+          <li>
+            <a href="">
+              <div class="port_img">
+                <img class="portfolio_img" src="./img/portfolio_sportswear.webp" alt="">
+                <div class="port_title">
+                  <h3>여성복/스포츠웨어/패션잡화 피팅모델</h3>
+                  <p>부분·피팅모델 알바</p>
+                </div>
+              </div>
+            </a>
+            <a class="profile" href="">
+              <p><img src="./img/jungmi.webp"></p>
+              <span>정미</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="port_img">
+                <img class="portfolio_img" src="./img/portfolio_remodeling.webp" alt="">
+                <div class="port_title">
+                  <h3>주택신축, 리모델링 및 보수공사</h3>
+                  <p>공사·건설현장 알바</p>
+                </div>
+              </div>
+            </a>
+            <a class="profile" href="">
+              <p><img src="./img/joohanchul.webp"></p>
+              <span>주한철</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="port_img">
+                <img class="portfolio_img" src="./img/portfolio_move.webp" alt="">
+                <div class="port_title">
+                  <h3>33평 아파트 포장이사로 진행했습니다.</h3>
+                  <p>국내 이사</p>
+                </div>
+              </div>
+            </a>
+            <a class="profile" href="">
+              <p><img src="./img/move.webp"></p>
+              <span>⭐ 왕창이사(대...</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="port_img">
+                <img class="portfolio_img" src="./img/portfolio_systemaircon.webp" alt="">
+                <div class="port_title">
+                  <h3>1way 천장형 분해세척</h3>
+                  <p>시스템에어컨 청소</p>
+                </div>
+              </div>
+            </a>
+            <a class="profile" href="">
+              <p><img src="./img/whitecleanic.webp"></p>
+              <span>[화이트크리닉]...</span>
+            </a>
+          </li>
         </ul>
-        <p class="portfolio_prev_button">
-          <img src="./img/prev_button.svg" alt="">
-        </p>
-        <p class="portfolio_next_button">
-          <img src="./img/next_button.svg" alt="">
-        </p>
       </div>
+      <p class="portfolio_prev_button">
+        <img src="./img/prev_button.svg" alt="">
+      </p>
+      <p class="portfolio_next_button">
+        <img src="./img/next_button.svg" alt="">
+      </p>
     </section>
     <section class="section_five">
       <h2>배우고 성장하는 재미</h2>
       <div class="section_five_fun">
-        <ul>
+        <ul class="lesson">
           <li>
             <a href="">
               <div class="lesson_list">
@@ -451,6 +632,22 @@
               <div class="lesson_list">
                 <img src="./img/guiter_lesson.webp" alt="">
                 <p>기타 레슨</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="lesson_list">
+                <img src="./img/golf_lesson.webp" alt="">
+                <p>골프 레슨</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="lesson_list">
+                <img src="./img/vocal_lesson.webp" alt="">
+                <p>보컬 레슨</p>
               </div>
             </a>
           </li>
@@ -501,7 +698,7 @@
         </a>
       </div>
       <div class="section_seven_story">
-        <ul>
+        <ul class="story">
           <li>
             <a href="">
               <div class="story_img"><img src="./img/sumgo_story1.webp" alt=""></div>
@@ -520,14 +717,44 @@
               <p>EP03 댄스스포츠 레슨 조소휘 고수 🔭</p>
             </a>
           </li>
+          <li>
+            <a href="">
+              <div class="story_img"><img src="./img/sumgo_story4.webp" alt=""></div>
+              <p>EP10 이사 청소하러 다녀오겠숨니다👋</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="story_img"><img src="./img/sumgo_story5.webp" alt=""></div>
+              <p>EP09 베이킹 레슨하러 다녀오겠숨니다👋</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="story_img"><img src="./img/sumgo_story6.webp" alt=""></div>
+              <p>EP02 OPIc과외 정희훈 고수🔭</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="story_img"><img src="./img/sumgo_story7.webp" alt=""></div>
+              <p>EP08 와인 레슨하러 다녀오겠숨니다👋</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="story_img"><img src="./img/sumgo_story8.webp" alt=""></div>
+              <p>EP01 수제악기 제작 김병철 고수 🔭</p>
+            </a>
+          </li>
         </ul>
-        <p class="story_prev_button">
-          <img src="./img/prev_button.svg" alt="">
-        </p>
-        <p class="story_next_button">
-          <img src="./img/next_button.svg" alt="">
-        </p>
       </div>
+      <p class="story_prev_button">
+        <img src="./img/prev_button.svg" alt="">
+      </p>
+      <p class="story_next_button">
+        <img src="./img/next_button.svg" alt="">
+      </p>
     </section>
   </main>
   <footer>

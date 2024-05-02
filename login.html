@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>숨고:숨은고수 - 1000만명이 선택한 전국민 생활 솔루션</title>
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/login.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <script defer src="./js/login.js"></script>
+  <script defer src="./js/header.js"></script>
+
 </head>
 <body>
   <header>
@@ -34,6 +40,36 @@
             </ul>
         </div>
     </div>
+    <div class="header_list">
+      <div class="header_list_height">
+        <div class="header_list_tab">
+          <ul>
+            <li><span class="header_popular colored">인기키워드</span></li>
+            <li><span class="header_recent">최근 검색한 서비스</span></li>
+          </ul>
+        </div>
+        <div class="header_list_content">
+          <ul>
+            <li><a href="#">피아노/키보드 레슨</a></li>
+            <li><a href="#">골프 레슨</a></li>
+            <li><a href="#">퍼스널트레이닝(PT)</a></li>
+            <li><a href="#">보컬 레슨</a></li>
+            <li><a href="#">수학 과외</a></li>
+            <li><a href="#">에어컨 설치 및 수리</a></li>
+            <li><a href="#">문 설치 및 수리</a></li>
+            <li><a href="#">수도 관련 설치 및 수리</a></li>
+          </ul>
+          <div class="header_recently_search">
+            <span>
+              최근 검색한 내역이 없습니다
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="header_list_close">
+        <span>닫기</span>
+      </div>
+    </div>
   </header>
   <main>
     <h2>로그인</h2>
@@ -41,11 +77,15 @@
       <form action="">
         <div class="login_email">
           <label for="">이메일</label>
-          <input type="text" placeholder="example@soomgo.com"/>
+          <input type="text" placeholder="example@soomgo.com" class="input_email" />
+          <div class="write_email"></div>
+          <!-- 이메일을 입력해주세요 -->
         </div>
         <div class="login_password">
           <label for="">비밀번호</label>
-          <input type="text" placeholder="비밀번호를 입력해주세요."/>
+          <input type="password" placeholder="비밀번호를 입력해주세요." class="input_pw"/>
+          <div class="write_pw"></div>
+          <!-- 비밀번호를 입력해주세요 -->
         </div>
         <div class="login_button">
           <button>이메일 로그인</button>
@@ -55,7 +95,7 @@
           <div class="line"></div>
           <a href="">비밀번호 찾기</a>
           <div class="line"></div>
-          <a href="">회원가입</a>
+          <a href="./join.html">회원가입</a>
         </div>
         <div class="login_kakao">
           <button>

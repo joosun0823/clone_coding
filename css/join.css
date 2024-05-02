@@ -1,40 +1,21 @@
-@font-face {
-  font-family: 'NanumBarunGothic';
-  font-style: normal;
-  font-weight: 400;
-  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
-  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
-}
 
-@font-face {
-  font-family: 'NanumBarunGothic';
-  font-style: normal;
-  font-weight: 700;
-  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
-  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
-}
-
-@font-face {
-  font-family: 'NanumBarunGothic';
-  font-style: normal;
-  font-weight: 300;
-  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
-  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
-}
 
 *{
-  font-family: 'NanumBarunGothic';
+  font-family: "Noto Sans KR", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;  
   color: #323232;
-  font-size: 16px;
 }
 
 main{
+  padding-top: 10px;
   background-color: #fafafa;
   padding-bottom: 100px;
 }
 
 h2{
-  padding-top: 130px;
+  padding-top: 100px;
   text-align: center;
   font-size: 34px;
   margin-bottom: 40px;
@@ -229,3 +210,13 @@ h2{
   padding: 20px 0;
 }
 
+.write_join_name, .write_join_email, .write_join_pw{
+  margin-top: 4px;
+  font-size: 14px;
+  color: red;
+}
+
+.please_check{
+  color: red;
+  font-size: 14px;
+}

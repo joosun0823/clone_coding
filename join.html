@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>무료 가입하기</title>
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/join.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <script defer src="./js/join.js"></script>
+  <script defer src="./js/header.js"></script>
+
 </head>
 <body>
   <header>
@@ -34,6 +40,36 @@
             </ul>
         </div>
     </div>
+    <div class="header_list">
+      <div class="header_list_height">
+        <div class="header_list_tab">
+          <ul>
+            <li><span class="header_popular colored">인기키워드</span></li>
+            <li><span class="header_recent">최근 검색한 서비스</span></li>
+          </ul>
+        </div>
+        <div class="header_list_content">
+          <ul>
+            <li><a href="#">피아노/키보드 레슨</a></li>
+            <li><a href="#">골프 레슨</a></li>
+            <li><a href="#">퍼스널트레이닝(PT)</a></li>
+            <li><a href="#">보컬 레슨</a></li>
+            <li><a href="#">수학 과외</a></li>
+            <li><a href="#">에어컨 설치 및 수리</a></li>
+            <li><a href="#">문 설치 및 수리</a></li>
+            <li><a href="#">수도 관련 설치 및 수리</a></li>
+          </ul>
+          <div class="header_recently_search">
+            <span>
+              최근 검색한 내역이 없습니다
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="header_list_close">
+        <span>닫기</span>
+      </div>
+    </div>
   </header>
   <main>
     <h2>숨고에 오신 것을 환영합니다</h2>
@@ -41,20 +77,25 @@
       <form action="">
         <div class="join_name">
           <label for="">이름</label>
-          <input type="text" placeholder="이름(실명)을 입력해주세요"/>
+          <input type="text" placeholder="이름(실명)을 입력해주세요" class ="input_join_name"/>
+          <div class="write_join_name"></div>
+          <!-- 이름을 입력해주세요. -->
         </div>
         <div class="join_email">
           <label for="">이메일</label>
-          <input type="text" placeholder="example@soomgo.com"/>
+          <input type="text" placeholder="example@soomgo.com" class ="input_join_email"/>
+          <div class="write_join_email"></div>
+          <!-- 이메일 주소를 입력해주세요. -->
         </div>
         <div class="join_password">
           <label for="">비밀번호</label>
-          <input type="text" placeholder="영문+숫자 조합 8자리 이상 입력해주세요."/>
+          <input type="password" placeholder="영문+숫자 조합 8자리 이상 입력해주세요." class ="input_join_password"/>
+          <div class="write_join_pw"></div>
         </div>
-        <div class="join_terms">
+        <div class="join_terms" id="join_check">
           <div>
             <label for="check_all">약관 전체 동의</label>
-            <input type="checkbox" id="check_all" >
+            <input type="checkbox" class="checkAll" id="check_all" >
           </div>
           <ul>
             <li>
@@ -62,43 +103,45 @@
                 <span>만 14세 이상입니다</span>
                 <span>(필수)</span>
               </label>
-              <input type="checkbox">
+              <input type="checkbox" class="check" id="check1">
             </li>
             <li>
               <label for="">
                 <span><a href="">이용약관 동의</a></span>
                 <span>(필수)</span>
               </label>
-              <input type="checkbox">
+              <input type="checkbox" class="check" id="check2">
             </li>
             <li>
               <label for="">
                 <span><a href="">개인정보 수집 및 이용 동의</a></span>
                 <span>(필수)</span>
               </label>
-              <input type="checkbox">
+              <input type="checkbox" class="check" id="check3">
             </li>
             <li>
               <label for="">
                 <span><a href="">선택정보 수집 및 이용 동의</a></span>
                 <span>(선택)</span>
               </label>
-              <input type="checkbox">
+              <input type="checkbox" class="check" id="check4">
             </li>
             <li>
               <label for="">
                 <span><a href="">개인정보 마케팅 활용 동의</a></span>
                 <span>(선택)</span>
               </label>
-              <input type="checkbox">
+              <input type="checkbox" class="check" id="check5">
             </li>
             <li>
               <label for="">
                 <span><a href="">마케팅 알림 수신 동의</a></span>
                 <span>(선택)</span>
               </label>
-              <input type="checkbox">
+              <input type="checkbox" class="check" id="check6">
             </li>
+            <div class="please_check"></div>
+            <!-- 이용약관에 동의해주세요 -->
           </ul>
         </div>
         <div class="join_button">
@@ -200,4 +243,5 @@
     </div>
   </footer>
 </body>
+
 </html>
